@@ -16,7 +16,14 @@ class FoldablePhone(isScreenLightOn: Boolean = false) : Phone(isScreenLightOn) {
         isFoldable = false
     }
 }
+// ver funcionamiento
+fun main(){
+    val foldable = FoldablePhone()
 
+    println(foldable.isFoldable)
+    foldable.abrir()
+    println(foldable.isFoldable)
+}
 
 // Tips sobre diferencias cuando tiene o no tiene val/var
 
